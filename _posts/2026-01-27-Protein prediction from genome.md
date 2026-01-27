@@ -1,4 +1,4 @@
-#BRAKER3: Protein prediction from genome
+# BRAKER3: Protein prediction from genome
 
 [Galaxy](https://usegalaxy.eu) hosts multiple bioinformatics tools that are run from the GUI rather than the command line in Terminal. You can register for a free online account with 250 GB of output storage.
 
