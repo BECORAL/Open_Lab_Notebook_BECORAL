@@ -9,33 +9,34 @@ These instructions predict and then combine exons from your genome of interest i
 
 ### Upload files
 1. Log in to your **Galaxy** account
-2. Click on **Upload** in the top left corner.
-3. Drag your genome file to be converted to proteins and the reference RNA-Seq and/or predicted protein files into the upload pop-up window. Multiple files can be uploaded at once. Click **Start**. Then click **Close**.
-4. Check your genome file to be converted to proteins to see if it is soft-masked. Open the file and see if some of the nucleotides are lower-case; if so, your file is soft-masked. 
-5. If your genome file to be converted to proteins is not soft-masked, [follow these instructions](https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/repeatmasker/tutorial.html) for Red or RepeatMasker tools. If you had to soft-mask the genome, be sure to use this new file in subsequent steps.
+2. Open the sequences headers in your genome file to be converted to proteins. Use Find-Replace to convert all spaces, colons, commas, etc. to underscores. For instance, " ", ": ", and ", " should be replaced with "_" so that "apple banana", "apple: banana", and "apple, banana" become "apple_banana".
+3. Check your genome file to be converted to proteins to see if it is soft-masked. Open the file and see if some of the nucleotides are lower-case; if so, your file is soft-masked. 
+4. If your genome file to be converted to proteins is not soft-masked, [follow these instructions](https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/repeatmasker/tutorial.html) for Red or RepeatMasker tools. If you had to soft-mask the genome, be sure to use this new file in subsequent steps.
+5. Click on **Upload** in the top left corner.
+6. Drag your genome file to be converted to proteins and the reference RNA-Seq and/or predicted protein files into the upload pop-up window. Multiple files can be uploaded at once. Click **Start**. Then click **Close**.
 
 ### BRAKER3
-6. In the **Tools** column (left half of screen), type **Braker3** into the search bar. Click on **BRAKER3 genome annotation**. This opens the BRAKER3 tool on the right half of the screen.
-7. Set the following:
-    a. Assembly to annotate = your genome file to be converted to proteins (.fna or .fasta file type). Remember to use the soft-masked version to improve protein prediction quality.
-    b. Genome sequence is soft-masked = Yes
-    c. RNA-seq mapped to genome to train Augustus/GeneMark = reference RNA-Seq.bam file; this is optional
-    d. Proteins to map to genome = reference predicted protein file from Uniprot (preferred) or NCBI as uniprot.fasta
-    e. Fungal genome = ignore if not working with fungal genome
-    f. Augustus settings = default
-    g. Advanced settings = default
-    h. Output format = GFF3
-8. Click **Run Tool** at the bottom of the settings.
-9. BRAKER3 could take anywhere from a few hours to 2-3 days to run depending on genome size and reference database quality.
+7. In the **Tools** column (left half of screen), type **Braker3** into the search bar. Click on **BRAKER3 genome annotation**. This opens the BRAKER3 tool on the right half of the screen.
+8. Set the following:
+   a. Assembly to annotate = your genome file to be converted to proteins (.fna or .fasta file type). Remember to use the soft-masked version to improve protein prediction quality.
+   b. Genome sequence is soft-masked = Yes
+   c. RNA-seq mapped to genome to train Augustus/GeneMark = reference RNA-Seq.bam file; this is optional
+   d. Proteins to map to genome = reference predicted protein file from Uniprot (preferred) or NCBI as uniprot.fasta
+   e. Fungal genome = ignore if not working with fungal genome
+   f. Augustus settings = default
+   g. Advanced settings = default
+   h. Output format = GFF3
+9. Click **Run Tool** at the bottom of the settings.
+10. BRAKER3 could take anywhere from a few hours to 2-3 days to run depending on genome size and reference database quality.
 
 ### Get file and review errors
-10. To download the completed GFF file, click on the **Save** icon (floppy disk) in the lower left corner of the green box for that analysis (green = successfully completed) on the right side of the screen.
-11. Errors in the analysis are indicated by a red box for that analysis. To see the error(s) information, click on the **View** symbol that looks like an eye inside box corners in the red box for that analysis. Then click on the **Error** icon that looks like a person with an ‘i’ on their abdomen. Galaxy includes an error wizard that will analyze error codes and give a layman’s description of the error plus possible fixes.
+11. To download the completed GFF file, click on the **Save** icon (floppy disk) in the lower left corner of the green box for that analysis (green = successfully completed) on the right side of the screen.
+12. Errors in the analysis are indicated by a red box for that analysis. To see the error(s) information, click on the **View** symbol that looks like an eye inside box corners in the red box for that analysis. Then click on the **Error** icon that looks like a person with an ‘i’ on their abdomen. Galaxy includes an error wizard that will analyze error codes and give a layman’s description of the error plus possible fixes.
 
 ### Convert nucleotide sequences to proteins
-12. Convert the GFF file to CDS and protein sequences using the **GFFread** tool. Search for this tool the same way as you found BRAKER3 in step 6
-13. Set the following:
-    a. Input BED, GTF, or GFF3 feature file = the output from BRAKER3. This can be chosen from the dropdown directly in Galaxy. Or you can upload the GFF file you downloaded in step 10.
+13. Convert the GFF file to CDS and protein sequences using the **GFFread** tool. Search for this tool the same way as you found BRAKER3 in step 7
+14. Set the following:
+    a. Input BED, GTF, or GFF3 feature file = the output from BRAKER3. This can be chosen from the dropdown directly in Galaxy. Or you can upload the GFF file you downloaded in step 6.
     b. Reference genome = From your history
     c. Genome reference fasta = your genome to be converted to predicted proteins, which you already uploaded
     d. Select fasta outputs = 
@@ -46,12 +47,12 @@ These instructions predict and then combine exons from your genome of interest i
     e. Decode URL encoded characters within attributes = Yes
     j. Warn about duplicate transcript IDs and other potential problems with the given GTF/GFF records = Yes
     k. Click **Run Tool** at the bottom of the settings.
-14. Download the nucleotide and protein files as in step 10 for the GFF file output from BRAKER3.
+15. Download the nucleotide and protein files as in step 11 for the GFF file output from BRAKER3.
 
 ### BUSCO evaluation
-15. Evaluate the quality of the gene/protein model prediction for your genome using BUSCO ([Benchmarking Universal Single-Copy Orthologs](https://watermark02.silverchair.com/bioinformatics_31_19_3210.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAA38wggN7BgkqhkiG9w0BBwagggNsMIIDaAIBADCCA2EGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMibWOgfi99KTCjhjaAgEQgIIDMpE29cO990Y7bRApuZqE2mCsCE-q5APcYb-1t-4G79TpRXxKm7RzyLmF-yEwKIW2XquNbPbPIa4KpKYHGck2i6JAu0ClE5EsGETpvOeZ3X3CND763bEVKuEgAF7h_BR0DEyP6oA9heCyFMq0NAugZwX-hcQs6gfvlXPegOkvLQ5rgZOnMC5R16hWFsCX3Z4qb20-IwjhkWi7ULt-LZ-yF5mdzn6C4BonxApEKcYt9ngK6zerKa6CwuM_9vPusiilLZZmIXiaSM1cGt7lOE-f0dhx3ieBbmMjPnZGZhmxbG1Eif0hfVL2sk5uAYkUkRlBxnCIAwrxqkvgKNy5nbdz8xJIxne1rJLtYMRNoN37oa7Lb5gC1ymHcjVRwP5Z0rmPHkx0E095pupIu7oflrC8e9Qkm3Ej0LV80hxsHAvCXX_NNWFMGTUaDvzf8ow5siiheftAbEwIoRhviXhhYRhAgBkWIJ16rER0rrEPB-vae849XbH33OrAG5PxhF4b9ZjdzcpfEA3dV2jFfx-T_U7kGKskzn2gep4xuhiYIYEy_UpbpdrcFtimdj_8cbnILCHbJ4LcY5rVPrj45IpMIaV7N985pkUESWA-ydMDvEkIqL-8K2ykVStR9os9-Lwd7hAKq1JFGgZ75_s4v8YFueHDTyJDbTAN0gwdpcyh79i29d9fCAQcSgnmy4Px9clAmbSISLIFwfqDmudwxW4Vv6LA7t0W83x_Zl6tn9pOqJOzSAE8CjmJNs92ypMDbnZUbiVXks7pIhJlnx8Ebe1N6uELlsou0Bhb8MLWcRhwDSk6WlfGcRC_5J2HT3szNkJhPdD4HqtsfS_TXVEg1t2QLhjqAvU63kwm8xMNnSw75M6dYaElLA_yUHz2jEIqJaMrPj_Qqk2rFw223dqhxEUPOCzBEZxW7CFTNODh6fVNyoDAvGh8UnJGudHmR6XcqaqW8nMC8tJ6c3Udr4pwfmTwcTAw4l1DpHVT4DGV9QK_Nc27lZJWWX4H63pTznR0BTm6wsKKRnlWEx0s0Mf_-Ew9WcujLY-NziuBUN9j7JvGftORiuPGxtqLHq9_jA8-6qCDEDWlhEsh)). Search for the **BUSCO** tool the same way as you found BRAKER3 in steps 6 and 12.
-16. Set the following:
-    a. Sequences to analyze = the output from GFFread. This can be chosen from the dropdown directly in Galaxy. Or you can upload the pep.fa or fasta file you downloaded in step 15.
+16. Evaluate the quality of the gene/protein model prediction for your genome using BUSCO ([Benchmarking Universal Single-Copy Orthologs](https://watermark02.silverchair.com/bioinformatics_31_19_3210.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAA38wggN7BgkqhkiG9w0BBwagggNsMIIDaAIBADCCA2EGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMibWOgfi99KTCjhjaAgEQgIIDMpE29cO990Y7bRApuZqE2mCsCE-q5APcYb-1t-4G79TpRXxKm7RzyLmF-yEwKIW2XquNbPbPIa4KpKYHGck2i6JAu0ClE5EsGETpvOeZ3X3CND763bEVKuEgAF7h_BR0DEyP6oA9heCyFMq0NAugZwX-hcQs6gfvlXPegOkvLQ5rgZOnMC5R16hWFsCX3Z4qb20-IwjhkWi7ULt-LZ-yF5mdzn6C4BonxApEKcYt9ngK6zerKa6CwuM_9vPusiilLZZmIXiaSM1cGt7lOE-f0dhx3ieBbmMjPnZGZhmxbG1Eif0hfVL2sk5uAYkUkRlBxnCIAwrxqkvgKNy5nbdz8xJIxne1rJLtYMRNoN37oa7Lb5gC1ymHcjVRwP5Z0rmPHkx0E095pupIu7oflrC8e9Qkm3Ej0LV80hxsHAvCXX_NNWFMGTUaDvzf8ow5siiheftAbEwIoRhviXhhYRhAgBkWIJ16rER0rrEPB-vae849XbH33OrAG5PxhF4b9ZjdzcpfEA3dV2jFfx-T_U7kGKskzn2gep4xuhiYIYEy_UpbpdrcFtimdj_8cbnILCHbJ4LcY5rVPrj45IpMIaV7N985pkUESWA-ydMDvEkIqL-8K2ykVStR9os9-Lwd7hAKq1JFGgZ75_s4v8YFueHDTyJDbTAN0gwdpcyh79i29d9fCAQcSgnmy4Px9clAmbSISLIFwfqDmudwxW4Vv6LA7t0W83x_Zl6tn9pOqJOzSAE8CjmJNs92ypMDbnZUbiVXks7pIhJlnx8Ebe1N6uELlsou0Bhb8MLWcRhwDSk6WlfGcRC_5J2HT3szNkJhPdD4HqtsfS_TXVEg1t2QLhjqAvU63kwm8xMNnSw75M6dYaElLA_yUHz2jEIqJaMrPj_Qqk2rFw223dqhxEUPOCzBEZxW7CFTNODh6fVNyoDAvGh8UnJGudHmR6XcqaqW8nMC8tJ6c3Udr4pwfmTwcTAw4l1DpHVT4DGV9QK_Nc27lZJWWX4H63pTznR0BTm6wsKKRnlWEx0s0Mf_-Ew9WcujLY-NziuBUN9j7JvGftORiuPGxtqLHq9_jA8-6qCDEDWlhEsh)). Search for the **BUSCO** tool the same way as you found BRAKER3 in steps 6 and 12.
+17. Set the following:
+    a. Sequences to analyze = the output from GFFread. This can be chosen from the dropdown directly in Galaxy. Or you can upload the pep.fa or fasta file you downloaded in step 6.
     b. Cached database with lineage = Eukaryotes (DATE) from the dropdown
     c. Mode = annotated gene sets (protein)
     d. Auto-detect or select lineage = select lineage
@@ -61,6 +62,6 @@ These instructions predict and then combine exons from your genome of interest i
     h. If desired, any of the other files can be chosen
     i. Summary image and List with missing IDs will be small files; gff, Protein sequences, and Nucleotide sequences will be MB in size
     j. All other settings should be default
-17. Click **Run Tool** at the bottom of the settings.
+18. Click **Run Tool** at the bottom of the settings.
 
 **High quality predictions for eukaryotes find complete versions of >90% of the reference orthologs**
