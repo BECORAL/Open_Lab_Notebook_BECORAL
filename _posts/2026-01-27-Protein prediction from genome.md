@@ -63,4 +63,4 @@ These instructions predict and then combine exons from your genome of interest i
     j. All other settings should be default
 17. Click **Run Tool** at the bottom of the settings.
 
-**High quality predictions for eukoryotes find complete versions of >90% of the reference orthologs**
+**High quality predictions for eukaryotes find complete versions of >90% of the reference orthologs**
