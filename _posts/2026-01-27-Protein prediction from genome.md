@@ -36,7 +36,7 @@ These instructions predict and then combine exons from your genome of interest i
 ### Convert nucleotide sequences to proteins
 13. Convert the GFF file to CDS and protein sequences using the **GFFread** tool. Search for this tool the same way as you found BRAKER3 in step 7
 14. Set the following:
-    a. Input BED, GTF, or GFF3 feature file = the output from BRAKER3. This can be chosen from the dropdown directly in Galaxy. Or you can upload the GFF file you downloaded in step 6.
+    a. Input BED, GTF, or GFF3 feature file = the output from BRAKER3. This can be chosen from the dropdown directly in Galaxy  (preferred as .gff uploads seem to be read by Galaxy as .bed files and so convert exons to CDSs incorrectly). Or you can upload the GFF file you downloaded in step 6.
     b. Reference genome = From your history
     c. Genome reference fasta = your genome to be converted to predicted proteins, which you already uploaded
     d. Select fasta outputs = 
