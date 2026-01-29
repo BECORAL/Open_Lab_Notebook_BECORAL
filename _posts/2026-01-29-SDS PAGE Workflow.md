@@ -39,7 +39,7 @@ Solution is stable at room temperature for years or until salts are observed to 
 
 MW 1: [Bio-Rad Molecular Weight Precision Plus Protein Kaleidoscope](https://www.bio-rad.com/en-us/sku/1610375EDU-precision-plus-protein-kaleidoscope-standards?ID=1610375EDU); good for observing protein separation during the gel run
 
-MW 2: [Bio-Rad Molecular Weight Precision Plus Protein Unstained Standards 1000 μL[(https://www.bio-rad.com/en-us/sku/1610363EDU-precision-plus-protein-unstained-standards?ID=1610363EDU); images best with UV activation with Stain Free gels. No need to use if using non-Stain Free gels.
+MW 2: [Bio-Rad Molecular Weight Precision Plus Protein Unstained Standards 1000 μL](https://www.bio-rad.com/en-us/sku/1610363EDU-precision-plus-protein-unstained-standards?ID=1610363EDU); images best with UV activation with Stain Free gels. No need to use if using non-Stain Free gels.
 
 12. Heat samples at 100 °C while shaking for 5 mins on the Thermomixer to denature proteins. Alternatively, pre-boil tap water in a 1-L beaker in the microwave for 3 minutes, then maintain boiling on a hot plate. Boil samples for 5 minutes while floating in a styrofoam support in the beaker.
 
