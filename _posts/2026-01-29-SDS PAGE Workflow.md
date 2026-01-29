@@ -18,9 +18,9 @@ Solution is stable at room temperature for years or until salts are observed to 
 
 2. Keep samples on ice. 
 
-3. Prepare 1X running buffer 70 mL of 10x SDS Running Buffe topped to 700 mL with MilliQ water.
+3. Prepare 1X running buffer 70 mL of 10x SDS Running Buffer topped to 700 mL with MilliQ water.
 
-4. Prepare gel rig using the [Bio-Rad 4-20% gel Mini-protean TGX Precast Gels][(https://www.bio-rad.com/en-us/product/mini-protean-tgx-stain-free-precast-gels?ID=N3GRU1E8Z). Always make sure the short side of the gel is facing the inner side of the rig. Remember to remove bottom tape.
+4. Prepare gel rig using the [Bio-Rad 4-20% gel Mini-protean TGX Precast Gels](https://www.bio-rad.com/en-us/product/mini-protean-tgx-stain-free-precast-gels?ID=N3GRU1E8Z). Always make sure the short side of the gel is facing the inner side of the rig. Remember to remove bottom tape.
 
 5. If running one gel, add the buffer dam with correct side facing the gasket and then seal the gasket. If running two gels, replace the buffer dam with the second gel (bottom tape removed).
 
@@ -31,35 +31,37 @@ Solution is stable at room temperature for years or until salts are observed to 
 9. Prepare Epi tubes of maximum 40 ul contents based on the amount of protein (μg/mL) obtained through the Protein Assay to achieve no more than 10 ug/ml per sample, with a target of 5 ug/ml. Use the table below as an example for combinging SAMPLE, 6x DYE, and enough PBS to bring the total volume to 40 ul.:
 
 10. | Sample | ug/ml | ug in 40 ml | ul for 10ug | Sample Vol (ul) | PBS Vol (ul) | 6X Dye Vol (ul) |
-   |--------|-------|-------------|-------------|-----------------|--------------|-----------------|
-   |   1    | 1170  |    46.8     |     8.5     |      8.5        |     31.5     |       8         |
-   |   2    |  42   |    1.68     |     238     |      40         |      0       |       8         |
+    |--------|-------|-------------|-------------|-----------------|--------------|-----------------|
+    | 1      | 1170  | 46.8        | 8.5         | 8.5             | 31.5         | 8               |
+    | 2      | 42    | 1.68        | 238         | 40              | 0            | 8               |
 
 11. Two ladder options:
-12. MW 1: [Bio-Rad Molecular Weight Precision Plus Protein Kaleidoscope](https://www.bio-rad.com/en-us/sku/1610375EDU-precision-plus-protein-kaleidoscope-standards?ID=1610375EDU); good for observing protein separation during the gel run
-    MW 2: [Bio-Rad Molecular Weight Precision Plus Protein Unstained Standards 1000 μL[(https://www.bio-rad.com/en-us/sku/1610363EDU-precision-plus-protein-unstained-standards?ID=1610363EDU); images best with UV activation with Stain Free gels. No need to use if using non-Stain Free gels.
 
-13. Heat samples at 100 °C while shaking for 5 mins on the Thermomixer to denature proteins. Alternatively, pre-boil tap water in a 1-L beaker in the microwave for 3 minutes, then maintain boiling on a hot plate. Boil samples for 5 minutes while floating in a styrofoam support in the beaker.
+MW 1: [Bio-Rad Molecular Weight Precision Plus Protein Kaleidoscope](https://www.bio-rad.com/en-us/sku/1610375EDU-precision-plus-protein-kaleidoscope-standards?ID=1610375EDU); good for observing protein separation during the gel run
 
-14. While samples are boiling, use a 1 ml transfer pipette to gently squirt running buffer into each well to rinse out the storage buffer. Then use a gel loading tip to gently ensure that the gel extensions between wells are fulling standing up; if they are allowed to fall over, contents will mix between wells.
+MW 2: [Bio-Rad Molecular Weight Precision Plus Protein Unstained Standards 1000 μL[(https://www.bio-rad.com/en-us/sku/1610363EDU-precision-plus-protein-unstained-standards?ID=1610363EDU); images best with UV activation with Stain Free gels. No need to use if using non-Stain Free gels.
+
+12. Heat samples at 100 °C while shaking for 5 mins on the Thermomixer to denature proteins. Alternatively, pre-boil tap water in a 1-L beaker in the microwave for 3 minutes, then maintain boiling on a hot plate. Boil samples for 5 minutes while floating in a styrofoam support in the beaker.
+
+13. While samples are boiling, use a 1 ml transfer pipette to gently squirt running buffer into each well to rinse out the storage buffer. Then use a gel loading tip to gently ensure that the gel extensions between wells are fulling standing up; if they are allowed to fall over, contents will mix between wells.
    
-16. Briefly spin samples using the mini-centrifuge to bring contents to the bottom of the Epi tube. 
+14. Briefly spin samples using the mini-centrifuge to bring contents to the bottom of the Epi tube. 
 
-17. Samples are most easily loaded in wells using [narrow-tipped gel-loading pipette tips](https://www.avantorsciences.com/us/en/product/26164521/vwr-gel-loading-pipette-tips). 
+15. Samples are most easily loaded in wells using [narrow-tipped gel-loading pipette tips](https://www.avantorsciences.com/us/en/product/26164521/vwr-gel-loading-pipette-tips). 
    
-18. Gently mix the sample with the pipette before loading the sample on the gel. Do NOT introduce bubbles; this can be achieved by setting the pipette volume to 30 ul and keeping the tip fully submerged while mixing. Maintain Epi tubes in a rack at room temperature so that contents don't settle out.
+16. Gently mix the sample with the pipette before loading the sample on the gel. Do NOT introduce bubbles; this can be achieved by setting the pipette volume to 30 ul and keeping the tip fully submerged while mixing. Maintain Epi tubes in a rack at room temperature so that contents don't settle out.
 
-19. Change tips between each ladder/sample. To ensure that the tip gets into the well, touch the tip to the taller plastic edge and then run it down into the well.
+17. Change tips between each ladder/sample. To ensure that the tip gets into the well, touch the tip to the taller plastic edge and then run it down into the well.
 
-20. Firmly place the cover on the gel rig ensuring correct polarity (black to black; red to red). Turn power supply on at 100 voltage until the samples have migrated fully outside the wells down into the gel. Current is flowing if you see small bubbles floating up frim the bottom of the gel rig.
+18. Firmly place the cover on the gel rig ensuring correct polarity (black to black; red to red). Turn power supply on at 100 voltage until the samples have migrated fully outside the wells down into the gel. Current is flowing if you see small bubbles floating up frim the bottom of the gel rig.
 
-21. Raise voltage to 200 for ~30 mins, or until the loading dye from all samples reaches the bottom of the gel.
+19. Raise voltage to 200 for ~30 mins, or until the loading dye from all samples reaches the bottom of the gel.
 
-22. When the desired amount of protein separation is achieved, turn off the power source, remove and unplug the lid from the gel rig, and unclip the gel(s) from the holder.
+20. When the desired amount of protein separation is achieved, turn off the power source, remove and unplug the lid from the gel rig, and unclip the gel(s) from the holder.
 
-23. The inside of the rig lid, the buffer dam, the rig container, and the gel bracket should be rinsed with DI water and air dried. Running buffer is safe to be disposed in sink drains. Be careful handling the gel bracket as it has thin wires that can be broken; if not rinsed after each use, these wires will corrode and then break.
+21. The inside of the rig lid, the buffer dam, the rig container, and the gel bracket should be rinsed with DI water and air dried. Running buffer is safe to be disposed in sink drains. Be careful handling the gel bracket as it has thin wires that can be broken; if not rinsed after each use, these wires will corrode and then break.
    
-24. Remove the plastic supports from the gel (using the green metal fork) and place gel in MQ.
+22. Remove the plastic supports from the gel (using the green metal fork) and place gel in MQ.
 
 ### Gel Visualization
 
