@@ -1,4 +1,4 @@
-# Protein Assay (Bicinchoninic Acid (BCA) Assay)
+# Protein Assay (Bicinchoninic Acid (BCA) Assay, F. Prada, 2 March 2022
 
 *A highly sensitive, detergent-compatible, colorimetric method for quantifying total protein concentration (typically 20–2,000 ug/mL). It works by reducing Cu2+ to Cu1+ in alkaline conditions (biuret reaction), which then chelates with BCA to form a purple-colored complex that absorbs light at 562 nm.*
 
